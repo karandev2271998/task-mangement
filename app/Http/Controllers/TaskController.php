@@ -95,7 +95,7 @@ class TaskController extends Controller
         $isTaskExist = Task::findOrFail($taskId);
         if(!$isChangeDateFormat){
             // Disable accessor for the edit page
-            $isTaskExist->setApplyFullNameAccessor($isChangeDateFormat);
+            $isTaskExist->setApplyDateFormatAccessor($isChangeDateFormat);
         }
         return $isTaskExist;
     }

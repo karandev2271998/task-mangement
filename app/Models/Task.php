@@ -28,7 +28,7 @@ class Task extends Model
         );
     }
 
-    public function setApplyFullNameAccessor($value)
+    public function setApplyDateFormatAccessor($value)
     {
         $this->isApplyDateFormat = $value;
     }
